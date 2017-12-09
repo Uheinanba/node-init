@@ -1,0 +1,17 @@
+{
+  "restartable": "rs",
+  "ignore": [
+      ".git",
+      "public/**/*",
+      "node_modules/**/node_modules"
+  ],
+  "watch": [
+    "app/",
+    "bin/",
+    "routes/",
+    "views/",
+    "app.js"
+  ],
+  "ext": "js json",
+  "legacy-watch": false
+}
