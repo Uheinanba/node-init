@@ -10,10 +10,9 @@ const router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   // const q = req.query.q;
-
-  // res.render('index', { title: utility.md5(q) });
-
-  const cnodeUrl = 'https://cnodejs.org/';
+  console.log(req.ip);
+  res.render('index', { title: 'Express' });
+  /* const cnodeUrl = 'https://cnodejs.org/';
 
   superagent.get(cnodeUrl).end(function(err, sres) {
     if (err) {
@@ -30,7 +29,7 @@ router.get('/', function(req, res, next) {
       });
     });
     res.send(topicUrls);
-  });
+  }); */
 });
 
 module.exports = router;

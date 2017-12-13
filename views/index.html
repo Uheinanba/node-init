@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<script> 
+$.ajax({
+    url: "/users",
+    type: "post",
+    data: {
+        name: "henry",
+        age: 30,
+        hobby: [ "sport", "coding" ]
+    },
+    success(res) {
+      console.log(res);
+    },
+    error() {
+      console.log(res);
+    }
+});
+</script>
